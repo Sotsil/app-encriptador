@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>App Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="encabezado">Encriptador de Texto</h1>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+            <div class="container">
+                <label for="textoUsuario"></label>
+                <input type="text" id="textoUsuario" placeholder="Ingrese el texto aquí:" class="container_input" onclick="clearParagraph()">
+                <div class="container_botones">
+                    <button onclick="remplazaVocales()" class="container_boton_encriptar">Encriptar</button>
+                    <button onclick="textoOriginal()" class="container_boton_desencriptar">Desencriptar</button>            
+                </div>
+                <p class="instrucciones">⚠ Únicamente minúsculas y sin caracteres especiales. El texto no puede ser solo numérico.</p>               
+            </div>          
+        </section>
+    </main>
+    <div id="display" class="result_formato">   
+        <div id="result"></div>
+        <button id="boton_copiado" onclick="copyText()" class="boton_copiar">Copiar!</button>
+    </div>
+    <img id="imagen" src="./images/dinosaurio.jpg" alt="imagen de dinosaurio" class="imagen_inicial"> 
+    <script src="app.js"></script>
+    <footer class="footer"> 
+        <p>Desarrollado por Sotsil Silva</p>
+        <div class="container_enlaces">
+            <a class="presentacion_enlaces_link" href="https://www.linkedin.com/in/sotsil-silva/" >Linkedin</a>
+            <a class="presentacion_enlaces_link" href="https://github.com/Sotsil" >GitHub</a>
+        </div>
+    </footer>     
+</body>
+</html>
